@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:gravity="center"
+              android:layout_height="match_parent"
+              tools:context=".ui.activity.DetailJadwalActivity">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@drawable/shadow"
+                      android:orientation="vertical">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/backgrounddepan"
+                    android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:orientation="vertical"
+                              android:padding="10dp"
+                              android:layout_marginBottom="4dp">
+                    <TextView
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="#ffffff"
+                            android:textSize="20dp"
+                            android:id="@+id/tvNamaMataKuliah"
+                            android:text="Nama Mata Kuliah"/>
+                    <TextView
+                            android:textStyle="bold"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#ffffff"
+                            android:gravity="center"
+                            android:textSize="10dp"
+                            android:id="@+id/tvNamaDosen"
+                            android:text="Nama Dosen"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:orientation="vertical"
+                              android:layout_marginTop="4dp"
+                              android:layout_marginBottom="4dp">
+                    <TextView
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="10dp"
+                            android:text="SKS"/>
+                    <TextView
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:id="@+id/tvSks"
+                            android:text="Sks"/>
+                    <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_height="5dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/dash"
+                            android:layerType="software" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:orientation="vertical"
+                              android:layout_marginTop="4dp"
+                              android:layout_marginBottom="4dp">
+                    <TextView
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="10dp"
+                            android:text="Hari"/>
+                    <TextView
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:id="@+id/tvHari"
+                            android:text="Hari"/>
+                    <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_height="5dp"
+                            android:src="@drawable/dash"
+                            android:layerType="software" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:orientation="vertical"
+                              android:layout_marginTop="4dp"
+                              android:layout_marginBottom="4dp">
+                    <TextView
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="10dp"
+                            android:text="Waktu"/>
+                    <TextView
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:id="@+id/tvWaktu"
+                            android:text="Waktu"/>
+                    <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_height="5dp"
+                            android:src="@drawable/dash"
+                            android:layerType="software" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:orientation="vertical"
+                              android:layout_marginTop="4dp"
+                              android:layout_marginBottom="4dp">
+                    <TextView
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="10dp"
+                            android:text="Nama Ruangan"/>
+                    <TextView
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:id="@+id/tvNamaRuangan"
+                            android:text="Nama Ruangan"/>
+                    <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_height="5dp"
+                            android:src="@drawable/dash"
+                            android:layerType="software" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:orientation="vertical"
+                              android:layout_marginTop="4dp"
+                              android:layout_marginBottom="4dp">
+                    <TextView
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="10dp"
+                            android:text="Kode Jadwal"/>
+                    <TextView
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:id="@+id/tvKodeJadwal"
+                            android:text="Kode Jadwal"/>
+
+                    <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_height="5dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/dash"
+                            android:layerType="software" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:orientation="vertical"
+                              android:layout_marginTop="4dp"
+                              android:layout_marginBottom="4dp">
+                    <TextView
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="10dp"
+                            android:text="Kode Kelas"/>
+                    <TextView
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:id="@+id/tvKodeKelas"
+                            android:text="Kode Kelas"/>
+                    <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_height="5dp"
+                            android:src="@drawable/dash"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layerType="software" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:orientation="vertical"
+                              android:layout_marginTop="4dp"
+                              android:layout_marginBottom="4dp">
+                    <TextView
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="10dp"
+                            android:text="Kode Mata Kuliah"/>
+                    <TextView
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:id="@+id/tvKodeMataKuliah"
+                            android:text="Kode Kelas"/>
+                    <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_height="5dp"
+                            android:src="@drawable/dash"
+                            android:layerType="software" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:orientation="vertical"
+                              android:layout_marginTop="4dp"
+                              android:layout_marginBottom="4dp">
+                    <TextView
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="10dp"
+                            android:text="Kode Dosen"/>
+                    <TextView
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:id="@+id/tvKodeDosen"
+                            android:text="Kode Dosen"/>
+                    <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_height="5dp"
+                            android:src="@drawable/dash"
+                            android:layerType="software" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,1108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:elevation="8dp"
+            android:layout_height="wrap_content">
+        <LinearLayout
+                android:background="@drawable/backgrounddepan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivImageProfile"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="80dp"
+                    android:layout_height="88dp"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/error_image"
+                    app:civ_border_width="3dp"
+                    app:civ_border_color="#ffffff"/>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="vertical"
+                          android:layout_gravity="center_vertical"
+                          android:padding="10dp"
+                          android:layout_height="wrap_content">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="M Alim Tajri"
+                        android:id="@+id/tvNama"
+                        android:textColor="#fff"
+                        android:textSize="21sp"/>
+                <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NPM"
+                        android:id="@+id/tvNpm"
+                        android:textColor="#fff"
+                        android:textSize="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/svProfil"
+            android:layout_weight="1">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shadow"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:orientation="vertical"
+                                  android:layout_marginTop="4dp"
+                                  android:layout_marginBottom="4dp">
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="10dp"
+                                android:text="NIK"/>
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:id="@+id/tvNik"
+                                android:text="NIK"/>
+                        <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="5dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/dash"
+                                android:layerType="software" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:orientation="vertical"
+                                  android:layout_marginTop="4dp"
+                                  android:layout_marginBottom="4dp">
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="10dp"
+                                android:text="NISN"/>
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:id="@+id/tvNISN"
+                                android:text="nisn"/>
+                        <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="5dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/dash"
+                                android:layerType="software" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:orientation="vertical"
+                                  android:layout_marginTop="4dp"
+                                  android:layout_marginBottom="4dp">
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="10dp"
+                                android:text="Tahun Masuk"/>
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:id="@+id/tvThn"
+                                android:text="Tahun Masuk"/>
+                        <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="5dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/dash"
+                                android:layerType="software" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:orientation="vertical"
+                                  android:layout_marginTop="4dp"
+                                  android:layout_marginBottom="4dp">
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="10dp"
+                                android:text="Tanggal Masuk"/>
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:id="@+id/tvTgl"
+                                android:text="Tanggal Masuk"/>
+                        <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="5dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/dash"
+                                android:layerType="software" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <ImageView
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            tools:ignore="VectorDrawableCompat"
+                            android:visibility="gone"/>
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:orientation="vertical"
+                                  android:layout_marginTop="4dp"
+                                  android:layout_marginBottom="4dp">
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="10dp"
+                                android:text="Jenis Kelamin"/>
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:id="@+id/tvJenis"
+                                android:text="Laki-laki"/>
+                        <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="5dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/dash"
+                                android:layerType="software" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:orientation="vertical"
+                                  android:layout_marginTop="4dp"
+                                  android:layout_marginBottom="4dp">
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="10dp"
+                                android:text="Transportasi"/>
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:id="@+id/tvTransportasi"
+                                android:text="Transportasi"/>
+                        <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="5dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/dash"
+                                android:layerType="software" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:orientation="vertical"
+                                  android:layout_marginTop="4dp"
+                                  android:layout_marginBottom="4dp">
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="10dp"
+                                android:text="Dosen Wali"/>
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:id="@+id/tvKodeDosen"
+                                android:text="Dosen Wali"/>
+                        <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="5dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/dash"
+                                android:layerType="software" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:orientation="vertical"
+                                  android:layout_marginTop="4dp"
+                                  android:layout_marginBottom="4dp">
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="10dp"
+                                android:text="Kelas"/>
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:id="@+id/tvKelas"
+                                android:text="Kelas"/>
+                        <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="5dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/dash"
+                                android:layerType="software" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:orientation="vertical"
+                                  android:layout_marginTop="4dp"
+                                  android:layout_marginBottom="4dp">
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="10dp"
+                                android:text="Kota Lahir"/>
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:id="@+id/tvKotalahir"
+                                android:text="Kota Lahir"/>
+                        <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="5dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/dash"
+                                android:layerType="software" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:orientation="vertical"
+                                  android:layout_marginTop="4dp"
+                                  android:layout_marginBottom="4dp">
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="10dp"
+                                android:text="Tanggal Lahir"/>
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:id="@+id/tvTgllahir"
+                                android:text="Tanggal Lahir"/>
+                        <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="5dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/dash"
+                                android:layerType="software" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:orientation="vertical"
+                                  android:layout_marginTop="4dp"
+                                  android:layout_marginBottom="4dp">
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="10dp"
+                                android:text="Agama"/>
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:id="@+id/tvAgama"
+                                android:text="Islam"/>
+                        <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="5dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/dash"
+                                android:layerType="software" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:orientation="vertical"
+                                  android:layout_marginTop="4dp"
+                                  android:layout_marginBottom="4dp">
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="10dp"
+                                android:text="Alamat"/>
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:id="@+id/tvAlamat"
+                                android:text="Alamat"/>
+                        <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="5dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/dash"
+                                android:layerType="software" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:orientation="vertical"
+                                  android:layout_marginTop="4dp"
+                                  android:layout_marginBottom="4dp">
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="10dp"
+                                android:text="Rt"/>
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:id="@+id/tvRt"
+                                android:text="Rt"/>
+                        <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="5dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/dash"
+                                android:layerType="software" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:orientation="vertical"
+                                  android:layout_marginTop="4dp"
+                                  android:layout_marginBottom="4dp">
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="10dp"
+                                android:text="Rw"/>
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:id="@+id/tvRw"
+                                android:text="Rw"/>
+                        <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="5dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/dash"
+                                android:layerType="software" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:orientation="vertical"
+                                  android:layout_marginTop="4dp"
+                                  android:layout_marginBottom="4dp">
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="10dp"
+                                android:text="Dusun"/>
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:id="@+id/tvDs"
+                                android:text="Dusun"/>
+                        <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="5dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/dash"
+                                android:layerType="software" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:orientation="vertical"
+                                  android:layout_marginTop="4dp"
+                                  android:layout_marginBottom="4dp">
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="10dp"
+                                android:text="Kode Kecamatan"/>
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:id="@+id/tvKec"
+                                android:text="Kecamatan"/>
+                        <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="5dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/dash"
+                                android:layerType="software" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:orientation="vertical"
+                                  android:layout_marginTop="4dp"
+                                  android:layout_marginBottom="4dp">
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="10dp"
+                                android:text="Kode Provinsi"/>
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:id="@+id/tvKdprov"
+                                android:text="Kode Provinsi"/>
+                        <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="5dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/dash"
+                                android:layerType="software" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:orientation="vertical"
+                                  android:layout_marginTop="4dp"
+                                  android:layout_marginBottom="4dp">
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="10dp"
+                                android:text="Telepon"/>
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:id="@+id/tvTlp"
+                                android:text="Telepon"/>
+                        <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="5dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/dash"
+                                android:layerType="software" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:orientation="vertical"
+                                  android:layout_marginTop="4dp"
+                                  android:layout_marginBottom="4dp">
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="10dp"
+                                android:text="Kode Alamat"/>
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:id="@+id/tvKdalamat"
+                                android:text="Alamat"/>
+                        <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="5dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/dash"
+                                android:layerType="software" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:orientation="vertical"
+                                  android:layout_marginTop="4dp"
+                                  android:layout_marginBottom="4dp">
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="10dp"
+                                android:text="Kode Pos"/>
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:id="@+id/tvKdpos"
+                                android:text="Kode Pos"/>
+                        <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="5dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/dash"
+                                android:layerType="software" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:orientation="vertical"
+                                  android:layout_marginTop="4dp"
+                                  android:layout_marginBottom="4dp">
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="10dp"
+                                android:text="Email"/>
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:id="@+id/tvEmail"
+                                android:text="Email"/>
+                        <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="5dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/dash"
+                                android:layerType="software" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:orientation="vertical"
+                                  android:layout_marginTop="4dp"
+                                  android:layout_marginBottom="4dp">
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="10dp"
+                                android:text="Gol. Darah"/>
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:id="@+id/tvGoldarah"
+                                android:text="Gol. Darah"/>
+                        <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="5dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/dash"
+                                android:layerType="software" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:orientation="vertical"
+                                  android:layout_marginTop="4dp"
+                                  android:layout_marginBottom="4dp">
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="10dp"
+                                android:text="Alamat Kos"/>
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:id="@+id/tvKos"
+                                android:text="Alamat Kos"/>
+                        <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="5dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/dash"
+                                android:layerType="software" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:orientation="vertical"
+                                  android:layout_marginTop="4dp"
+                                  android:layout_marginBottom="4dp">
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="10dp"
+                                android:text="Nama Ayah"/>
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:id="@+id/tvAyah"
+                                android:text="Nama Ayah"/>
+                        <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="5dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/dash"
+                                android:layerType="software" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:orientation="vertical"
+                                  android:layout_marginTop="4dp"
+                                  android:layout_marginBottom="4dp">
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="10dp"
+                                android:text="Nama Ibu"/>
+                        <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:id="@+id/tvIbu"
+                                android:text="Nama Ibu"/>
+                        <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="5dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/dash"
+                                android:layerType="software" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#218add</color>
+    <color name="colorPrimaryDark">#FF4561F2</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="birutua">#4561f2</color>
+    <color name="birumuda">#218add</color>
+</resources>
