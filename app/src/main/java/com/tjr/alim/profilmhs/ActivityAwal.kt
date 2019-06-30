@@ -6,7 +6,7 @@ import android.os.Bundle
 import com.tjr.alim.profilmhs.ui.activity.DataActivity
 import kotlinx.android.synthetic.main.activity_hal_utama.*
 
-class SplashActivity : AppCompatActivity() {
+class ActivityAwal : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
