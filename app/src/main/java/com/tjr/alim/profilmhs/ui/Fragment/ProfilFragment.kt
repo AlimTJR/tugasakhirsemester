@@ -122,7 +122,7 @@ class  ProfilFragment : Fragment() {
                     ibu.text = items.get(i).ibu
                     activity?.let { it1 ->
                         Glide.with(it1).load("http://informatika.upgris.ac.id/mobile/image/" + items.get(i).foto)
-                            .override(512, 512).error(R.drawable.error_image).into(ivImageProfile)
+                            .override(512, 512).error(R.drawable.profile_eror).into(ivImageProfile)
                     }
                 }
             }, {
