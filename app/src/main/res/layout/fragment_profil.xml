@@ -22,6 +22,7 @@
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/profile_eror"
                     app:civ_border_width="3dp"
+                    app:civ_border_overlay="true"
                     app:civ_border_color="#ffffff"/>
 
             <LinearLayout android:layout_width="match_parent"
