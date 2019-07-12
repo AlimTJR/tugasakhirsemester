@@ -26,48 +26,69 @@
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_margin="5dp"
+            android:orientation="vertical"
             android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_height="wrap_content" android:id="@+id/linearLayout2"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp">
+
         <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:orientation="vertical"
-                app:cardCornerRadius="15dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/cardView">
+                android:layout_marginBottom="10dp"
+                android:background="#6DFFFFFF"
+                app:cardCornerRadius="25dp"
+                android:layout_height="wrap_content">
+
             <LinearLayout
                     android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_margin="20dp"
                     android:orientation="vertical"
-                    android:padding="10dp"
                     android:layout_height="wrap_content">
-
+                <TextView
+                        android:text="@string/hintcari"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                <SearchView
+                        android:layout_width="match_parent"
+                        android:background="@drawable/searchview"
+                        android:id="@+id/caridata"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:queryHint="@string/hintcari"
+                        android:layout_height="45dp">
+                </SearchView>
+                <TextView
+                        android:text="@string/disclaimer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
                 <LinearLayout
                         android:layout_width="match_parent"
-                        android:gravity="center"
-                        android:orientation="horizontal"
+                        android:orientation="vertical"
+                        android:padding="10dp"
                         android:layout_height="wrap_content">
-                    <Button
+                    <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"
+                            android:src="@drawable/dash"
+                            android:layerType="software" />
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:text="Atau"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"/>
+                    <TextView
                             android:id="@+id/keberanda"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:padding="10dp"
-                            android:layout_margin="5dp"
-                            android:textColor="#ffffff"
-                            android:background="@drawable/button"
-                            android:text="LET'S START"/>
-                </LinearLayout>
-                <LinearLayout
-                        android:layout_margin="10dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                    <TextView
-                            android:text="@string/disclaimer"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"/>
+                            android:textAlignment="center"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/birutua"
+                            android:text="LIHAT PROFIL ADMIN"/>
                 </LinearLayout>
             </LinearLayout>
+
         </android.support.v7.widget.CardView>
     </LinearLayout>
 

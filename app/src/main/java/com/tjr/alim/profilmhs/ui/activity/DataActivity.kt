@@ -18,8 +18,8 @@ class DataActivity : AppCompatActivity() {
 
         val adapter = FragmentPagerItemAdapter(
             supportFragmentManager, FragmentPagerItems.with(this)
-                .add("Jadwal Kuliah", JadwalKuliahFragment::class.java)
                 .add("Profil", ProfilFragment::class.java)
+                .add("Jadwal Kuliah", JadwalKuliahFragment::class.java)
                 .create()
         )
         val viewPager = findViewById(R.id.viewpager) as ViewPager
